@@ -13,8 +13,8 @@
 		63DEF8341CBCA0870093230C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DEF8321CBCA0870093230C /* Main.storyboard */; };
 		63DEF8361CBCA0870093230C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DEF8351CBCA0870093230C /* Assets.xcassets */; };
 		63DEF8391CBCA0870093230C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DEF8371CBCA0870093230C /* LaunchScreen.storyboard */; };
-		63DEF8441CBCA0870093230C /* MyNewTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF8431CBCA0870093230C /* MyNewTestDemoTests.m */; };
-		63DEF84F1CBCA0870093230C /* MyNewTestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF84E1CBCA0870093230C /* MyNewTestDemoUITests.m */; };
+		63DEF8441CBCA0870093230C /* HaiFeiArrangeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF8431CBCA0870093230C /* HaiFeiArrangeProjectTests.m */; };
+		63DEF84F1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF84E1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +23,19 @@
 			containerPortal = 63DEF81E1CBCA0870093230C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 63DEF8251CBCA0870093230C;
-			remoteInfo = MyNewTestDemo;
+			remoteInfo = HaiFeiArrangeProject;
 		};
 		63DEF84B1CBCA0870093230C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63DEF81E1CBCA0870093230C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 63DEF8251CBCA0870093230C;
-			remoteInfo = MyNewTestDemo;
+			remoteInfo = HaiFeiArrangeProject;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		63DEF8261CBCA0870093230C /* MyNewTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNewTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DEF8261CBCA0870093230C /* HaiFeiArrangeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaiFeiArrangeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DEF82A1CBCA0870093230C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63DEF82C1CBCA0870093230C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		63DEF82D1CBCA0870093230C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,11 +45,11 @@
 		63DEF8351CBCA0870093230C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63DEF8381CBCA0870093230C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63DEF83A1CBCA0870093230C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63DEF83F1CBCA0870093230C /* MyNewTestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNewTestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63DEF8431CBCA0870093230C /* MyNewTestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNewTestDemoTests.m; sourceTree = "<group>"; };
+		63DEF83F1CBCA0870093230C /* HaiFeiArrangeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaiFeiArrangeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DEF8431CBCA0870093230C /* HaiFeiArrangeProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaiFeiArrangeProjectTests.m; sourceTree = "<group>"; };
 		63DEF8451CBCA0870093230C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63DEF84A1CBCA0870093230C /* MyNewTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNewTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63DEF84E1CBCA0870093230C /* MyNewTestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNewTestDemoUITests.m; sourceTree = "<group>"; };
+		63DEF84A1CBCA0870093230C /* HaiFeiArrangeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaiFeiArrangeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DEF84E1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaiFeiArrangeProjectUITests.m; sourceTree = "<group>"; };
 		63DEF8501CBCA0870093230C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,9 +81,9 @@
 		63DEF81D1CBCA0870093230C = {
 			isa = PBXGroup;
 			children = (
-				63DEF8281CBCA0870093230C /* MyNewTestDemo */,
-				63DEF8421CBCA0870093230C /* MyNewTestDemoTests */,
-				63DEF84D1CBCA0870093230C /* MyNewTestDemoUITests */,
+				63DEF8281CBCA0870093230C /* HaiFeiArrangeProject */,
+				63DEF8421CBCA0870093230C /* HaiFeiArrangeProjectTests */,
+				63DEF84D1CBCA0870093230C /* HaiFeiArrangeProjectUITests */,
 				63DEF8271CBCA0870093230C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,14 +91,14 @@
 		63DEF8271CBCA0870093230C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63DEF8261CBCA0870093230C /* MyNewTestDemo.app */,
-				63DEF83F1CBCA0870093230C /* MyNewTestDemoTests.xctest */,
-				63DEF84A1CBCA0870093230C /* MyNewTestDemoUITests.xctest */,
+				63DEF8261CBCA0870093230C /* HaiFeiArrangeProject.app */,
+				63DEF83F1CBCA0870093230C /* HaiFeiArrangeProjectTests.xctest */,
+				63DEF84A1CBCA0870093230C /* HaiFeiArrangeProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		63DEF8281CBCA0870093230C /* MyNewTestDemo */ = {
+		63DEF8281CBCA0870093230C /* HaiFeiArrangeProject */ = {
 			isa = PBXGroup;
 			children = (
 				63DEF82C1CBCA0870093230C /* AppDelegate.h */,
@@ -111,7 +111,7 @@
 				63DEF83A1CBCA0870093230C /* Info.plist */,
 				63DEF8291CBCA0870093230C /* Supporting Files */,
 			);
-			path = MyNewTestDemo;
+			path = HaiFeiArrangeProject;
 			sourceTree = "<group>";
 		};
 		63DEF8291CBCA0870093230C /* Supporting Files */ = {
@@ -122,30 +122,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		63DEF8421CBCA0870093230C /* MyNewTestDemoTests */ = {
+		63DEF8421CBCA0870093230C /* HaiFeiArrangeProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				63DEF8431CBCA0870093230C /* MyNewTestDemoTests.m */,
+				63DEF8431CBCA0870093230C /* HaiFeiArrangeProjectTests.m */,
 				63DEF8451CBCA0870093230C /* Info.plist */,
 			);
-			path = MyNewTestDemoTests;
+			path = HaiFeiArrangeProjectTests;
 			sourceTree = "<group>";
 		};
-		63DEF84D1CBCA0870093230C /* MyNewTestDemoUITests */ = {
+		63DEF84D1CBCA0870093230C /* HaiFeiArrangeProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
-				63DEF84E1CBCA0870093230C /* MyNewTestDemoUITests.m */,
+				63DEF84E1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m */,
 				63DEF8501CBCA0870093230C /* Info.plist */,
 			);
-			path = MyNewTestDemoUITests;
+			path = HaiFeiArrangeProjectUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		63DEF8251CBCA0870093230C /* MyNewTestDemo */ = {
+		63DEF8251CBCA0870093230C /* HaiFeiArrangeProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63DEF8531CBCA0870093230C /* Build configuration list for PBXNativeTarget "MyNewTestDemo" */;
+			buildConfigurationList = 63DEF8531CBCA0870093230C /* Build configuration list for PBXNativeTarget "HaiFeiArrangeProject" */;
 			buildPhases = (
 				63DEF8221CBCA0870093230C /* Sources */,
 				63DEF8231CBCA0870093230C /* Frameworks */,
@@ -155,14 +155,14 @@
 			);
 			dependencies = (
 			);
-			name = MyNewTestDemo;
-			productName = MyNewTestDemo;
-			productReference = 63DEF8261CBCA0870093230C /* MyNewTestDemo.app */;
+			name = HaiFeiArrangeProject;
+			productName = HaiFeiArrangeProject;
+			productReference = 63DEF8261CBCA0870093230C /* HaiFeiArrangeProject.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63DEF83E1CBCA0870093230C /* MyNewTestDemoTests */ = {
+		63DEF83E1CBCA0870093230C /* HaiFeiArrangeProjectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63DEF8561CBCA0870093230C /* Build configuration list for PBXNativeTarget "MyNewTestDemoTests" */;
+			buildConfigurationList = 63DEF8561CBCA0870093230C /* Build configuration list for PBXNativeTarget "HaiFeiArrangeProjectTests" */;
 			buildPhases = (
 				63DEF83B1CBCA0870093230C /* Sources */,
 				63DEF83C1CBCA0870093230C /* Frameworks */,
@@ -173,14 +173,14 @@
 			dependencies = (
 				63DEF8411CBCA0870093230C /* PBXTargetDependency */,
 			);
-			name = MyNewTestDemoTests;
-			productName = MyNewTestDemoTests;
-			productReference = 63DEF83F1CBCA0870093230C /* MyNewTestDemoTests.xctest */;
+			name = HaiFeiArrangeProjectTests;
+			productName = HaiFeiArrangeProjectTests;
+			productReference = 63DEF83F1CBCA0870093230C /* HaiFeiArrangeProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		63DEF8491CBCA0870093230C /* MyNewTestDemoUITests */ = {
+		63DEF8491CBCA0870093230C /* HaiFeiArrangeProjectUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63DEF8591CBCA0870093230C /* Build configuration list for PBXNativeTarget "MyNewTestDemoUITests" */;
+			buildConfigurationList = 63DEF8591CBCA0870093230C /* Build configuration list for PBXNativeTarget "HaiFeiArrangeProjectUITests" */;
 			buildPhases = (
 				63DEF8461CBCA0870093230C /* Sources */,
 				63DEF8471CBCA0870093230C /* Frameworks */,
@@ -191,9 +191,9 @@
 			dependencies = (
 				63DEF84C1CBCA0870093230C /* PBXTargetDependency */,
 			);
-			name = MyNewTestDemoUITests;
-			productName = MyNewTestDemoUITests;
-			productReference = 63DEF84A1CBCA0870093230C /* MyNewTestDemoUITests.xctest */;
+			name = HaiFeiArrangeProjectUITests;
+			productName = HaiFeiArrangeProjectUITests;
+			productReference = 63DEF84A1CBCA0870093230C /* HaiFeiArrangeProjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -219,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 63DEF8211CBCA0870093230C /* Build configuration list for PBXProject "MyNewTestDemo" */;
+			buildConfigurationList = 63DEF8211CBCA0870093230C /* Build configuration list for PBXProject "HaiFeiArrangeProject" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -232,9 +232,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				63DEF8251CBCA0870093230C /* MyNewTestDemo */,
-				63DEF83E1CBCA0870093230C /* MyNewTestDemoTests */,
-				63DEF8491CBCA0870093230C /* MyNewTestDemoUITests */,
+				63DEF8251CBCA0870093230C /* HaiFeiArrangeProject */,
+				63DEF83E1CBCA0870093230C /* HaiFeiArrangeProjectTests */,
+				63DEF8491CBCA0870093230C /* HaiFeiArrangeProjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63DEF8441CBCA0870093230C /* MyNewTestDemoTests.m in Sources */,
+				63DEF8441CBCA0870093230C /* HaiFeiArrangeProjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63DEF84F1CBCA0870093230C /* MyNewTestDemoUITests.m in Sources */,
+				63DEF84F1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,12 +298,12 @@
 /* Begin PBXTargetDependency section */
 		63DEF8411CBCA0870093230C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 63DEF8251CBCA0870093230C /* MyNewTestDemo */;
+			target = 63DEF8251CBCA0870093230C /* HaiFeiArrangeProject */;
 			targetProxy = 63DEF8401CBCA0870093230C /* PBXContainerItemProxy */;
 		};
 		63DEF84C1CBCA0870093230C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 63DEF8251CBCA0870093230C /* MyNewTestDemo */;
+			target = 63DEF8251CBCA0870093230C /* HaiFeiArrangeProject */;
 			targetProxy = 63DEF84B1CBCA0870093230C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -413,9 +413,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M9UPX4LZRG;
-				INFOPLIST_FILE = MyNewTestDemo/Info.plist;
+				INFOPLIST_FILE = HaiFeiArrangeProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Elisa.MyNewTestDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = HaiFeiExplorer.HaiFeiArrangeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -425,9 +425,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M9UPX4LZRG;
-				INFOPLIST_FILE = MyNewTestDemo/Info.plist;
+				INFOPLIST_FILE = HaiFeiArrangeProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Elisa.MyNewTestDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = HaiFeiExplorer.HaiFeiArrangeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -436,11 +436,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MyNewTestDemoTests/Info.plist;
+				INFOPLIST_FILE = HaiFeiArrangeProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Elisa.MyNewTestDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = HaiFeiExplorer.HaiFeiArrangeProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyNewTestDemo.app/MyNewTestDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HaiFeiArrangeProject.app/HaiFeiArrangeProject";
 			};
 			name = Debug;
 		};
@@ -448,22 +448,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MyNewTestDemoTests/Info.plist;
+				INFOPLIST_FILE = HaiFeiArrangeProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Elisa.MyNewTestDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = HaiFeiExplorer.HaiFeiArrangeProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyNewTestDemo.app/MyNewTestDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HaiFeiArrangeProject.app/HaiFeiArrangeProject";
 			};
 			name = Release;
 		};
 		63DEF85A1CBCA0870093230C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = MyNewTestDemoUITests/Info.plist;
+				INFOPLIST_FILE = HaiFeiArrangeProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Elisa.MyNewTestDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = HaiFeiExplorer.HaiFeiArrangeProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = MyNewTestDemo;
+				TEST_TARGET_NAME = HaiFeiArrangeProject;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -471,11 +471,11 @@
 		63DEF85B1CBCA0870093230C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = MyNewTestDemoUITests/Info.plist;
+				INFOPLIST_FILE = HaiFeiArrangeProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Elisa.MyNewTestDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = HaiFeiExplorer.HaiFeiArrangeProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = MyNewTestDemo;
+				TEST_TARGET_NAME = HaiFeiArrangeProject;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
@@ -483,7 +483,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63DEF8211CBCA0870093230C /* Build configuration list for PBXProject "MyNewTestDemo" */ = {
+		63DEF8211CBCA0870093230C /* Build configuration list for PBXProject "HaiFeiArrangeProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63DEF8511CBCA0870093230C /* Debug */,
@@ -492,7 +492,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63DEF8531CBCA0870093230C /* Build configuration list for PBXNativeTarget "MyNewTestDemo" */ = {
+		63DEF8531CBCA0870093230C /* Build configuration list for PBXNativeTarget "HaiFeiArrangeProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63DEF8541CBCA0870093230C /* Debug */,
@@ -501,7 +501,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63DEF8561CBCA0870093230C /* Build configuration list for PBXNativeTarget "MyNewTestDemoTests" */ = {
+		63DEF8561CBCA0870093230C /* Build configuration list for PBXNativeTarget "HaiFeiArrangeProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63DEF8571CBCA0870093230C /* Debug */,
@@ -510,7 +510,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63DEF8591CBCA0870093230C /* Build configuration list for PBXNativeTarget "MyNewTestDemoUITests" */ = {
+		63DEF8591CBCA0870093230C /* Build configuration list for PBXNativeTarget "HaiFeiArrangeProjectUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63DEF85A1CBCA0870093230C /* Debug */,

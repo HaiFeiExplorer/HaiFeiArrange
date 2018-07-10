@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MyNewTestDemo.xcodeproj">
+      location = "self:/Users/unionx/Documents/GitHubFile/MyNewDemo/HaiFeiArrangeProject.xcodeproj">
    </FileRef>
 </Workspace>

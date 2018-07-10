@@ -1,18 +1,18 @@
 //
-//  MyNewTestDemoTests.m
-//  MyNewTestDemoTests
+//  HaiFeiArrangeProjectTests.m
+//  HaiFeiArrangeProjectTests
 //
-//  Created by Lisa on 16/4/12.
-//  Copyright © 2016年 Elisa. All rights reserved.
+//  Created by HaiFeiExplorer on 16/4/12.
+//  Copyright © 2016年 HaiFeiExplorer. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface MyNewTestDemoTests : XCTestCase
+@interface HaiFeiArrangeProjectTests : XCTestCase
 
 @end
 
-@implementation MyNewTestDemoTests
+@implementation HaiFeiArrangeProjectTests
 
 - (void)setUp {
     [super setUp];
