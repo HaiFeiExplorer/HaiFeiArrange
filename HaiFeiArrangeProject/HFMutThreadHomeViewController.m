@@ -20,7 +20,36 @@
     self.title = @"多线程";
     
     self.view.backgroundColor = [UIColor lightGrayColor];
+    [self installSubViews];
 }
+
+
+#pragma mark - Event response
+- (void)mutThreadButtonAction
+{
+    NSLog(@"GCD Action");
+//    HFMutThreadHomeViewController *mutThraedVC = [[HFMutThreadHomeViewController alloc]init];
+//    [self.navigationController pushViewController:mutThraedVC animated:YES];
+}
+
+
+#pragma mark - Private methdods
+
+- (void)installSubViews
+{
+    
+    UIButton *mutThreaBut = [UIButton buttonWithType:UIButtonTypeCustom];
+    mutThreaBut.frame = CGRectMake(10, 100, 100, 40);
+    mutThreaBut.backgroundColor = [UIColor blueColor];
+    [mutThreaBut setTitle:@"GCD" forState:UIControlStateNormal];
+    mutThreaBut.titleLabel.font = [UIFont systemFontOfSize:14];
+    [mutThreaBut addTarget:self action:@selector(mutThreadButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:mutThreaBut];
+    
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
