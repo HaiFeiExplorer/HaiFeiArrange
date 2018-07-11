@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		63DEF82B1CBCA0870093230C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF82A1CBCA0870093230C /* main.m */; };
 		63DEF82E1CBCA0870093230C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF82D1CBCA0870093230C /* AppDelegate.m */; };
-		63DEF8311CBCA0870093230C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF8301CBCA0870093230C /* ViewController.m */; };
-		63DEF8341CBCA0870093230C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DEF8321CBCA0870093230C /* Main.storyboard */; };
 		63DEF8361CBCA0870093230C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DEF8351CBCA0870093230C /* Assets.xcassets */; };
 		63DEF8391CBCA0870093230C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DEF8371CBCA0870093230C /* LaunchScreen.storyboard */; };
 		63DEF8441CBCA0870093230C /* HaiFeiArrangeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF8431CBCA0870093230C /* HaiFeiArrangeProjectTests.m */; };
 		63DEF84F1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF84E1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m */; };
+		6C1D7EF820F4927300CB6465 /* HFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D7EF720F4927300CB6465 /* HFBaseViewController.m */; };
+		6C1D7EFB20F4928B00CB6465 /* HFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */; };
+		6C1D7EFE20F49DCE00CB6465 /* HFMutThreadHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D7EFD20F49DCE00CB6465 /* HFMutThreadHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +40,6 @@
 		63DEF82A1CBCA0870093230C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63DEF82C1CBCA0870093230C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		63DEF82D1CBCA0870093230C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		63DEF82F1CBCA0870093230C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		63DEF8301CBCA0870093230C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		63DEF8331CBCA0870093230C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63DEF8351CBCA0870093230C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63DEF8381CBCA0870093230C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63DEF83A1CBCA0870093230C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +49,12 @@
 		63DEF84A1CBCA0870093230C /* HaiFeiArrangeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaiFeiArrangeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DEF84E1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaiFeiArrangeProjectUITests.m; sourceTree = "<group>"; };
 		63DEF8501CBCA0870093230C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C1D7EF620F4927300CB6465 /* HFBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFBaseViewController.h; sourceTree = "<group>"; };
+		6C1D7EF720F4927300CB6465 /* HFBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFBaseViewController.m; sourceTree = "<group>"; };
+		6C1D7EF920F4928B00CB6465 /* HFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFHomeViewController.h; sourceTree = "<group>"; };
+		6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFHomeViewController.m; sourceTree = "<group>"; };
+		6C1D7EFC20F49DCE00CB6465 /* HFMutThreadHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFMutThreadHomeViewController.h; sourceTree = "<group>"; };
+		6C1D7EFD20F49DCE00CB6465 /* HFMutThreadHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFMutThreadHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +107,12 @@
 			children = (
 				63DEF82C1CBCA0870093230C /* AppDelegate.h */,
 				63DEF82D1CBCA0870093230C /* AppDelegate.m */,
-				63DEF82F1CBCA0870093230C /* ViewController.h */,
-				63DEF8301CBCA0870093230C /* ViewController.m */,
-				63DEF8321CBCA0870093230C /* Main.storyboard */,
+				6C1D7EF620F4927300CB6465 /* HFBaseViewController.h */,
+				6C1D7EF720F4927300CB6465 /* HFBaseViewController.m */,
+				6C1D7EF920F4928B00CB6465 /* HFHomeViewController.h */,
+				6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */,
+				6C1D7EFC20F49DCE00CB6465 /* HFMutThreadHomeViewController.h */,
+				6C1D7EFD20F49DCE00CB6465 /* HFMutThreadHomeViewController.m */,
 				63DEF8351CBCA0870093230C /* Assets.xcassets */,
 				63DEF8371CBCA0870093230C /* LaunchScreen.storyboard */,
 				63DEF83A1CBCA0870093230C /* Info.plist */,
@@ -202,8 +209,9 @@
 		63DEF81E1CBCA0870093230C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HF;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = Elisa;
+				ORGANIZATIONNAME = HaiFeiExplorer;
 				TargetAttributes = {
 					63DEF8251CBCA0870093230C = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -246,7 +254,6 @@
 			files = (
 				63DEF8391CBCA0870093230C /* LaunchScreen.storyboard in Resources */,
 				63DEF8361CBCA0870093230C /* Assets.xcassets in Resources */,
-				63DEF8341CBCA0870093230C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,9 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63DEF8311CBCA0870093230C /* ViewController.m in Sources */,
+				6C1D7EF820F4927300CB6465 /* HFBaseViewController.m in Sources */,
 				63DEF82E1CBCA0870093230C /* AppDelegate.m in Sources */,
 				63DEF82B1CBCA0870093230C /* main.m in Sources */,
+				6C1D7EFB20F4928B00CB6465 /* HFHomeViewController.m in Sources */,
+				6C1D7EFE20F49DCE00CB6465 /* HFMutThreadHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +318,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		63DEF8321CBCA0870093230C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63DEF8331CBCA0870093230C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63DEF8371CBCA0870093230C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
