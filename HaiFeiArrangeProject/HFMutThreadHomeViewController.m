@@ -7,6 +7,7 @@
 //
 
 #import "HFMutThreadHomeViewController.h"
+#import "HFQueueAndOperationViewController.h"
 
 @interface HFMutThreadHomeViewController ()
 
@@ -27,9 +28,9 @@
 #pragma mark - Event response
 - (void)mutThreadButtonAction
 {
-    NSLog(@"GCD Action");
-//    HFMutThreadHomeViewController *mutThraedVC = [[HFMutThreadHomeViewController alloc]init];
-//    [self.navigationController pushViewController:mutThraedVC animated:YES];
+    NSLog(@"队列和操作 Action");
+    HFQueueAndOperationViewController *queueOperationVC = [[HFQueueAndOperationViewController alloc]init];
+    [self.navigationController pushViewController:queueOperationVC animated:YES];
 }
 
 
@@ -41,7 +42,7 @@
     UIButton *mutThreaBut = [UIButton buttonWithType:UIButtonTypeCustom];
     mutThreaBut.frame = CGRectMake(10, 100, 100, 40);
     mutThreaBut.backgroundColor = [UIColor blueColor];
-    [mutThreaBut setTitle:@"GCD" forState:UIControlStateNormal];
+    [mutThreaBut setTitle:@"队列和操作" forState:UIControlStateNormal];
     mutThreaBut.titleLabel.font = [UIFont systemFontOfSize:14];
     [mutThreaBut addTarget:self action:@selector(mutThreadButtonAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:mutThreaBut];

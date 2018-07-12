@@ -16,6 +16,8 @@
 		6C1D7EF820F4927300CB6465 /* HFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D7EF720F4927300CB6465 /* HFBaseViewController.m */; };
 		6C1D7EFB20F4928B00CB6465 /* HFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */; };
 		6C1D7EFE20F49DCE00CB6465 /* HFMutThreadHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D7EFD20F49DCE00CB6465 /* HFMutThreadHomeViewController.m */; };
+		6C94379D20F605B3007F37FF /* HFGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C94379C20F605B3007F37FF /* HFGCDViewController.m */; };
+		6C9437A020F703F4007F37FF /* HFQueueAndOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C94379F20F703F4007F37FF /* HFQueueAndOperationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFHomeViewController.m; sourceTree = "<group>"; };
 		6C1D7EFC20F49DCE00CB6465 /* HFMutThreadHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFMutThreadHomeViewController.h; sourceTree = "<group>"; };
 		6C1D7EFD20F49DCE00CB6465 /* HFMutThreadHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFMutThreadHomeViewController.m; sourceTree = "<group>"; };
+		6C94379B20F605B3007F37FF /* HFGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFGCDViewController.h; sourceTree = "<group>"; };
+		6C94379C20F605B3007F37FF /* HFGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFGCDViewController.m; sourceTree = "<group>"; };
+		6C94379E20F703F4007F37FF /* HFQueueAndOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFQueueAndOperationViewController.h; sourceTree = "<group>"; };
+		6C94379F20F703F4007F37FF /* HFQueueAndOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFQueueAndOperationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 				6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */,
 				6C1D7EFC20F49DCE00CB6465 /* HFMutThreadHomeViewController.h */,
 				6C1D7EFD20F49DCE00CB6465 /* HFMutThreadHomeViewController.m */,
+				6C94379E20F703F4007F37FF /* HFQueueAndOperationViewController.h */,
+				6C94379F20F703F4007F37FF /* HFQueueAndOperationViewController.m */,
+				6C94379B20F605B3007F37FF /* HFGCDViewController.h */,
+				6C94379C20F605B3007F37FF /* HFGCDViewController.m */,
 				63DEF8351CBCA0870093230C /* Assets.xcassets */,
 				63DEF8371CBCA0870093230C /* LaunchScreen.storyboard */,
 				63DEF83A1CBCA0870093230C /* Info.plist */,
@@ -278,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C9437A020F703F4007F37FF /* HFQueueAndOperationViewController.m in Sources */,
 				6C1D7EF820F4927300CB6465 /* HFBaseViewController.m in Sources */,
+				6C94379D20F605B3007F37FF /* HFGCDViewController.m in Sources */,
 				63DEF82E1CBCA0870093230C /* AppDelegate.m in Sources */,
 				63DEF82B1CBCA0870093230C /* main.m in Sources */,
 				6C1D7EFB20F4928B00CB6465 /* HFHomeViewController.m in Sources */,
