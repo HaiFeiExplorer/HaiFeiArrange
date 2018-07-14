@@ -11,6 +11,9 @@
 
 @interface HFMutThreadHomeViewController ()
 
+
+@property (nonatomic, strong) NSMutableArray *mutButtonArray;
+@property (nonatomic, strong) NSMutableArray *mutSecondVCArray;
 @end
 
 @implementation HFMutThreadHomeViewController
@@ -20,37 +23,52 @@
 
     self.title = @"多线程";
     
-    self.view.backgroundColor = [UIColor lightGrayColor];
-    [self installSubViews];
+    [self installArray];
+    [self installSubButtons];
+    
 }
 
 
+
 #pragma mark - Event response
-- (void)mutThreadButtonAction
+- (void)buttonActions:(UIButton *)button
 {
-    NSLog(@"队列和操作 Action");
-    HFQueueAndOperationViewController *queueOperationVC = [[HFQueueAndOperationViewController alloc]init];
-    [self.navigationController pushViewController:queueOperationVC animated:YES];
+    NSInteger tag = button.tag - 9000;
+    NSString *tempVCStr = self.mutSecondVCArray[tag];
+    id tempVC = [[NSClassFromString(tempVCStr) alloc]init];
+    if(tempVC){
+        [self.navigationController pushViewController:tempVC animated:YES];
+
+    }else{
+        NSLog(@"尚未完善");
+    }
+    
 }
 
 
 #pragma mark - Private methdods
-
-- (void)installSubViews
+- (void)installArray
 {
-    
-    UIButton *mutThreaBut = [UIButton buttonWithType:UIButtonTypeCustom];
-    mutThreaBut.frame = CGRectMake(10, 100, 100, 40);
-    mutThreaBut.backgroundColor = [UIColor blueColor];
-    [mutThreaBut setTitle:@"队列和操作" forState:UIControlStateNormal];
-    mutThreaBut.titleLabel.font = [UIFont systemFontOfSize:14];
-    [mutThreaBut addTarget:self action:@selector(mutThreadButtonAction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:mutThreaBut];
-    
-    
+    self.mutSecondVCArray = [NSMutableArray arrayWithObjects:@"HFQueueAndOperationViewController",@"", nil];
+    self.mutButtonArray = [NSMutableArray arrayWithObjects:@"队列andGCD",@"NSOperation", nil];
+
 }
-
-
+- (void)installSubButtons
+{
+    CGFloat buttonHeight = 40;
+    CGFloat buttonWidth = 100;
+    CGFloat butttonSpace = 10;
+    for (int i = 0; i < self.mutButtonArray.count; i++) {
+        UIButton *tempButon = [UIButton buttonWithType:UIButtonTypeCustom];
+        tempButon.tag = 9000 + i;
+        tempButon.frame = CGRectMake(10, 50 + butttonSpace*i + buttonHeight*i, buttonWidth, buttonHeight);
+        [tempButon addTarget:self action:@selector(buttonActions:) forControlEvents:UIControlEventTouchUpInside];
+        [tempButon setTitle:self.mutButtonArray[i] forState:UIControlStateNormal];
+        tempButon.backgroundColor = [UIColor blueColor];
+        tempButon.titleLabel.font = [UIFont systemFontOfSize:14];
+        [self.view addSubview:tempButon];
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

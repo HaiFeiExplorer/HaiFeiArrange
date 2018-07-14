@@ -8,13 +8,16 @@
 
 #import "HFQueueAndOperationViewController.h"
 
-@interface HFQueueAndOperationViewController ()
+#define kQueueAndOperationViewCellID @"kQueueAndOperationViewCellID"
+
+@interface HFQueueAndOperationViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) dispatch_queue_t serialQueue;
 @property (nonatomic, strong) dispatch_queue_t concurrentQueue;
 
-
 @property (nonatomic, strong) NSMutableArray *mutButtonArray;
+
+@property (nonatomic, strong) UITableView *mainTableView;
 @end
 
 @implementation HFQueueAndOperationViewController
@@ -23,38 +26,49 @@
     [super viewDidLoad];
 
     self.title = @"队列和操作";
-    self.view.backgroundColor = [UIColor whiteColor];
+    [self installButtonArray];
     [self installSubQueue];
-    [self installSubButtons];
+    [self installMainTableView];
 }
 
-#pragma mark - Event response
-- (void)buttonActions:(UIButton *)button
+#pragma mark - UITableViewDelegate,UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    switch (button.tag) {
-        case 1000:
+    return self.mutButtonArray.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kQueueAndOperationViewCellID];
+    cell.textLabel.text = self.mutButtonArray[indexPath.row];
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSInteger selectRow = indexPath.row;
+    switch (selectRow) {
+        case 0:
             //串行队列＋同步任务：不会开启新的线程，任务逐步完成。
             [self creatSyOperstionWithTag:__LINE__ concurrent:NO];
             [self creatSyOperstionWithTag:__LINE__ concurrent:NO];
             break;
-        case 1001:
+        case 1:
             //串行队列＋异步任务：可能开启新的线程，任务逐步完成。
             [self creatAyOperstionWithTag:__LINE__ concurrent:NO];
             [self creatAyOperstionWithTag:__LINE__ concurrent:NO];
             break;
-        case 1002:
+        case 2:
             //并发队列＋同步任务：不会开启新的线程，任务逐步完成。
             [self creatSyOperstionWithTag:__LINE__ concurrent:YES];
             [self creatSyOperstionWithTag:__LINE__ concurrent:YES];
             [self creatSyOperstionWithTag:__LINE__ concurrent:YES];
             break;
-        case 1003:
+        case 3:
             //并发队列＋异步任务：开启新的线程，任务同步完成。
             [self creatAyOperstionWithTag:__LINE__ concurrent:YES];
             [self creatAyOperstionWithTag:__LINE__ concurrent:YES];
             [self creatAyOperstionWithTag:__LINE__ concurrent:YES];
             break;
-        case 1004:
+        case 4:
             [self creatDispatchApplyActon];
             break;
             
@@ -62,7 +76,6 @@
             break;
     }
 }
-
 #pragma mark - Private methods
 - (void)installSubQueue
 {
@@ -71,24 +84,28 @@
     //并行队列
     self.concurrentQueue = dispatch_queue_create("concurrentQueue.ys.com", DISPATCH_QUEUE_CONCURRENT);
 }
-- (void)installSubButtons
+- (void)installMainTableView
 {
-    self.mutButtonArray = [NSMutableArray arrayWithObjects:@"串行+同步",@"串行+异步",@"并行+同步",@"并行+异步",@"dispatch_apply", nil];
-    CGFloat buttonHeight = 40;
-    CGFloat buttonWidth = 100;
-    CGFloat butttonSpace = 10;
-    for (int i = 0; i < self.mutButtonArray.count; i++) {
-        UIButton *tempButon = [UIButton buttonWithType:UIButtonTypeCustom];
-        tempButon.tag = 1000 + i;
-        tempButon.frame = CGRectMake(10, 50 + butttonSpace*i + buttonHeight*i, buttonWidth, buttonHeight);
-        [tempButon addTarget:self action:@selector(buttonActions:) forControlEvents:UIControlEventTouchUpInside];
-        [tempButon setTitle:self.mutButtonArray[i] forState:UIControlStateNormal];
-        tempButon.backgroundColor = [UIColor blueColor];
-        tempButon.titleLabel.font = [UIFont systemFontOfSize:14];
-        [self.view addSubview:tempButon];
-    }
+    self.mainTableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    [self.view addSubview:self.mainTableView];
+    [self.mainTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kQueueAndOperationViewCellID];
+    self.mainTableView.estimatedRowHeight = 0;
+    self.mainTableView.rowHeight = 50;
+    self.mainTableView.tableFooterView = [[UIView alloc] init];
+    self.mainTableView.delegate = self;
+    self.mainTableView.dataSource = self;
 }
-//创建同步操作
+- (void)installButtonArray
+{
+    self.mutButtonArray = [NSMutableArray arrayWithObjects:@"串行+同步",@"串行+异步",@"并行+同步",@"并行+异步",@"dispatch_apply",@"dispatch_barrier_async",@"dispatch_after",@"dispatch_once",@"dispatch_group_notify", @"dispatch_group_wait",@"dispatch_semaphore",@"dispatch_group_enterAndLeave",nil];
+}
+
+/**
+ 创建同步步操作
+ 
+ @param tag 调用本函数时所在的行数
+ @param concurrent YES 加入到并行队列，NO是加入到串行队列
+ */
 - (void)creatSyOperstionWithTag:(NSInteger)tag concurrent:(BOOL)concurrent
 {
     if (concurrent) {
@@ -108,7 +125,13 @@
     }
   
 }
-//创建异步操作
+
+/**
+ 创建异步操作
+
+ @param tag 调用本函数时所在的行数
+ @param concurrent YES 加入到并行队列，NO是加入到串行队列
+ */
 - (void)creatAyOperstionWithTag:(NSInteger)tag concurrent:(BOOL)concurrent
 {
     if (concurrent) {
