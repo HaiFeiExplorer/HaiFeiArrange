@@ -15,9 +15,16 @@
 		63DEF84F1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF84E1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m */; };
 		6C1D7EF820F4927300CB6465 /* HFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D7EF720F4927300CB6465 /* HFBaseViewController.m */; };
 		6C1D7EFB20F4928B00CB6465 /* HFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */; };
-		6C1D7EFE20F49DCE00CB6465 /* HFMutThreadHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D7EFD20F49DCE00CB6465 /* HFMutThreadHomeViewController.m */; };
-		6C9437A020F703F4007F37FF /* HFQueueAndOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C94379F20F703F4007F37FF /* HFQueueAndOperationViewController.m */; };
-		6C9437A320F99C43007F37FF /* HFGCDGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9437A220F99C43007F37FF /* HFGCDGroupViewController.m */; };
+		6C91C7F9210EFB640078ACC6 /* UIButton+HFBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7E6210EFB630078ACC6 /* UIButton+HFBlock.m */; };
+		6C91C7FA210EFB640078ACC6 /* HFFactoryArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7E9210EFB630078ACC6 /* HFFactoryArray.m */; };
+		6C91C7FB210EFB640078ACC6 /* HFFatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7EB210EFB630078ACC6 /* HFFatherModel.m */; };
+		6C91C7FC210EFB640078ACC6 /* HFGlobleHandleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7ED210EFB630078ACC6 /* HFGlobleHandleObject.m */; };
+		6C91C7FD210EFB640078ACC6 /* HFSonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7EF210EFB630078ACC6 /* HFSonModel.m */; };
+		6C91C7FE210EFB640078ACC6 /* HFConstStaticExternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7F2210EFB640078ACC6 /* HFConstStaticExternViewController.m */; };
+		6C91C7FF210EFB640078ACC6 /* HFGCDGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7F4210EFB640078ACC6 /* HFGCDGroupViewController.m */; };
+		6C91C800210EFB640078ACC6 /* HFMutThreadHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7F6210EFB640078ACC6 /* HFMutThreadHomeViewController.m */; };
+		6C91C801210EFB640078ACC6 /* HFQueueAndOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7F8210EFB640078ACC6 /* HFQueueAndOperationViewController.m */; };
+		6C91C804211154C10078ACC6 /* NSString+HFMethodExChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C803211154C10078ACC6 /* NSString+HFMethodExChange.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +62,26 @@
 		6C1D7EF720F4927300CB6465 /* HFBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFBaseViewController.m; sourceTree = "<group>"; };
 		6C1D7EF920F4928B00CB6465 /* HFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFHomeViewController.h; sourceTree = "<group>"; };
 		6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFHomeViewController.m; sourceTree = "<group>"; };
-		6C1D7EFC20F49DCE00CB6465 /* HFMutThreadHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFMutThreadHomeViewController.h; sourceTree = "<group>"; };
-		6C1D7EFD20F49DCE00CB6465 /* HFMutThreadHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFMutThreadHomeViewController.m; sourceTree = "<group>"; };
-		6C94379E20F703F4007F37FF /* HFQueueAndOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFQueueAndOperationViewController.h; sourceTree = "<group>"; };
-		6C94379F20F703F4007F37FF /* HFQueueAndOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFQueueAndOperationViewController.m; sourceTree = "<group>"; };
-		6C9437A120F99C43007F37FF /* HFGCDGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFGCDGroupViewController.h; sourceTree = "<group>"; };
-		6C9437A220F99C43007F37FF /* HFGCDGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFGCDGroupViewController.m; sourceTree = "<group>"; };
+		6C91C7E5210EFB630078ACC6 /* UIButton+HFBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+HFBlock.h"; sourceTree = "<group>"; };
+		6C91C7E6210EFB630078ACC6 /* UIButton+HFBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HFBlock.m"; sourceTree = "<group>"; };
+		6C91C7E8210EFB630078ACC6 /* HFFactoryArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFFactoryArray.h; sourceTree = "<group>"; };
+		6C91C7E9210EFB630078ACC6 /* HFFactoryArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFFactoryArray.m; sourceTree = "<group>"; };
+		6C91C7EA210EFB630078ACC6 /* HFFatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFFatherModel.h; sourceTree = "<group>"; };
+		6C91C7EB210EFB630078ACC6 /* HFFatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFFatherModel.m; sourceTree = "<group>"; };
+		6C91C7EC210EFB630078ACC6 /* HFGlobleHandleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFGlobleHandleObject.h; sourceTree = "<group>"; };
+		6C91C7ED210EFB630078ACC6 /* HFGlobleHandleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFGlobleHandleObject.m; sourceTree = "<group>"; };
+		6C91C7EE210EFB630078ACC6 /* HFSonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSonModel.h; sourceTree = "<group>"; };
+		6C91C7EF210EFB630078ACC6 /* HFSonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFSonModel.m; sourceTree = "<group>"; };
+		6C91C7F1210EFB640078ACC6 /* HFConstStaticExternViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFConstStaticExternViewController.h; sourceTree = "<group>"; };
+		6C91C7F2210EFB640078ACC6 /* HFConstStaticExternViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFConstStaticExternViewController.m; sourceTree = "<group>"; };
+		6C91C7F3210EFB640078ACC6 /* HFGCDGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFGCDGroupViewController.h; sourceTree = "<group>"; };
+		6C91C7F4210EFB640078ACC6 /* HFGCDGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFGCDGroupViewController.m; sourceTree = "<group>"; };
+		6C91C7F5210EFB640078ACC6 /* HFMutThreadHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFMutThreadHomeViewController.h; sourceTree = "<group>"; };
+		6C91C7F6210EFB640078ACC6 /* HFMutThreadHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFMutThreadHomeViewController.m; sourceTree = "<group>"; };
+		6C91C7F7210EFB640078ACC6 /* HFQueueAndOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFQueueAndOperationViewController.h; sourceTree = "<group>"; };
+		6C91C7F8210EFB640078ACC6 /* HFQueueAndOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFQueueAndOperationViewController.m; sourceTree = "<group>"; };
+		6C91C802211154C10078ACC6 /* NSString+HFMethodExChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HFMethodExChange.h"; sourceTree = "<group>"; };
+		6C91C803211154C10078ACC6 /* NSString+HFMethodExChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HFMethodExChange.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,18 +132,15 @@
 		63DEF8281CBCA0870093230C /* HaiFeiArrangeProject */ = {
 			isa = PBXGroup;
 			children = (
+				6C91C7E4210EFB630078ACC6 /* Category */,
+				6C91C7E7210EFB630078ACC6 /* Models */,
+				6C91C7F0210EFB640078ACC6 /* VCS */,
 				63DEF82C1CBCA0870093230C /* AppDelegate.h */,
 				63DEF82D1CBCA0870093230C /* AppDelegate.m */,
 				6C1D7EF620F4927300CB6465 /* HFBaseViewController.h */,
 				6C1D7EF720F4927300CB6465 /* HFBaseViewController.m */,
 				6C1D7EF920F4928B00CB6465 /* HFHomeViewController.h */,
 				6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */,
-				6C1D7EFC20F49DCE00CB6465 /* HFMutThreadHomeViewController.h */,
-				6C1D7EFD20F49DCE00CB6465 /* HFMutThreadHomeViewController.m */,
-				6C94379E20F703F4007F37FF /* HFQueueAndOperationViewController.h */,
-				6C94379F20F703F4007F37FF /* HFQueueAndOperationViewController.m */,
-				6C9437A120F99C43007F37FF /* HFGCDGroupViewController.h */,
-				6C9437A220F99C43007F37FF /* HFGCDGroupViewController.m */,
 				63DEF8351CBCA0870093230C /* Assets.xcassets */,
 				63DEF8371CBCA0870093230C /* LaunchScreen.storyboard */,
 				63DEF83A1CBCA0870093230C /* Info.plist */,
@@ -155,6 +173,47 @@
 				63DEF8501CBCA0870093230C /* Info.plist */,
 			);
 			path = HaiFeiArrangeProjectUITests;
+			sourceTree = "<group>";
+		};
+		6C91C7E4210EFB630078ACC6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6C91C7E5210EFB630078ACC6 /* UIButton+HFBlock.h */,
+				6C91C7E6210EFB630078ACC6 /* UIButton+HFBlock.m */,
+				6C91C802211154C10078ACC6 /* NSString+HFMethodExChange.h */,
+				6C91C803211154C10078ACC6 /* NSString+HFMethodExChange.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		6C91C7E7210EFB630078ACC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6C91C7E8210EFB630078ACC6 /* HFFactoryArray.h */,
+				6C91C7E9210EFB630078ACC6 /* HFFactoryArray.m */,
+				6C91C7EA210EFB630078ACC6 /* HFFatherModel.h */,
+				6C91C7EB210EFB630078ACC6 /* HFFatherModel.m */,
+				6C91C7EC210EFB630078ACC6 /* HFGlobleHandleObject.h */,
+				6C91C7ED210EFB630078ACC6 /* HFGlobleHandleObject.m */,
+				6C91C7EE210EFB630078ACC6 /* HFSonModel.h */,
+				6C91C7EF210EFB630078ACC6 /* HFSonModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6C91C7F0210EFB640078ACC6 /* VCS */ = {
+			isa = PBXGroup;
+			children = (
+				6C91C7F1210EFB640078ACC6 /* HFConstStaticExternViewController.h */,
+				6C91C7F2210EFB640078ACC6 /* HFConstStaticExternViewController.m */,
+				6C91C7F3210EFB640078ACC6 /* HFGCDGroupViewController.h */,
+				6C91C7F4210EFB640078ACC6 /* HFGCDGroupViewController.m */,
+				6C91C7F5210EFB640078ACC6 /* HFMutThreadHomeViewController.h */,
+				6C91C7F6210EFB640078ACC6 /* HFMutThreadHomeViewController.m */,
+				6C91C7F7210EFB640078ACC6 /* HFQueueAndOperationViewController.h */,
+				6C91C7F8210EFB640078ACC6 /* HFQueueAndOperationViewController.m */,
+			);
+			path = VCS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,13 +347,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C9437A020F703F4007F37FF /* HFQueueAndOperationViewController.m in Sources */,
+				6C91C7FE210EFB640078ACC6 /* HFConstStaticExternViewController.m in Sources */,
 				6C1D7EF820F4927300CB6465 /* HFBaseViewController.m in Sources */,
+				6C91C7FB210EFB640078ACC6 /* HFFatherModel.m in Sources */,
+				6C91C7FF210EFB640078ACC6 /* HFGCDGroupViewController.m in Sources */,
+				6C91C801210EFB640078ACC6 /* HFQueueAndOperationViewController.m in Sources */,
 				63DEF82E1CBCA0870093230C /* AppDelegate.m in Sources */,
+				6C91C7FD210EFB640078ACC6 /* HFSonModel.m in Sources */,
+				6C91C800210EFB640078ACC6 /* HFMutThreadHomeViewController.m in Sources */,
+				6C91C7F9210EFB640078ACC6 /* UIButton+HFBlock.m in Sources */,
 				63DEF82B1CBCA0870093230C /* main.m in Sources */,
+				6C91C7FA210EFB640078ACC6 /* HFFactoryArray.m in Sources */,
+				6C91C804211154C10078ACC6 /* NSString+HFMethodExChange.m in Sources */,
 				6C1D7EFB20F4928B00CB6465 /* HFHomeViewController.m in Sources */,
-				6C9437A320F99C43007F37FF /* HFGCDGroupViewController.m in Sources */,
-				6C1D7EFE20F49DCE00CB6465 /* HFMutThreadHomeViewController.m in Sources */,
+				6C91C7FC210EFB640078ACC6 /* HFGlobleHandleObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

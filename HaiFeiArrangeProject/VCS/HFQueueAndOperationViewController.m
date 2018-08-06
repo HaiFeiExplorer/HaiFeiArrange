@@ -7,6 +7,8 @@
 //
 
 #import "HFQueueAndOperationViewController.h"
+#import "HFGCDGroupViewController.h"
+
 
 #define kQueueAndOperationViewCellID @"kQueueAndOperationViewCellID"
 
@@ -18,6 +20,7 @@
 @property (nonatomic, strong) NSMutableArray *mutButtonArray;
 
 @property (nonatomic, strong) UITableView *mainTableView;
+
 @end
 
 @implementation HFQueueAndOperationViewController
@@ -71,6 +74,9 @@
         case 4:
             [self creatDispatchApplyActon];
             break;
+        case 5:
+            [self pushGCDVC];
+            break;
             
         default:
             break;
@@ -97,9 +103,14 @@
 }
 - (void)installButtonArray
 {
-    self.mutButtonArray = [NSMutableArray arrayWithObjects:@"串行+同步",@"串行+异步",@"并行+同步",@"并行+异步",@"dispatch_apply",@"dispatch_barrier_async",@"dispatch_after",@"dispatch_once",@"dispatch_group_notify", @"dispatch_group_wait",@"dispatch_semaphore",@"dispatch_group_enterAndLeave",nil];
+    self.mutButtonArray = [NSMutableArray arrayWithObjects:@"串行+同步",@"串行+异步",@"并行+同步",@"并行+异步",@"dispatch_apply",@"dispatch_group",nil];
 }
-
+- (void)pushGCDVC
+{
+    HFGCDGroupViewController *groupVC = [[HFGCDGroupViewController alloc]init];
+    [self.navigationController pushViewController:groupVC animated:YES];
+    
+}
 /**
  创建同步步操作
  
@@ -123,9 +134,7 @@
             NSLog(@"end 任务所在行数%ld - %@，",(long)tag,[NSThread currentThread]);
         });
     }
-  
 }
-
 /**
  创建异步操作
 
