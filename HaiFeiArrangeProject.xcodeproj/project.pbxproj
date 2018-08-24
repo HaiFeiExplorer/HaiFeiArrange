@@ -25,6 +25,9 @@
 		6C91C800210EFB640078ACC6 /* HFMutThreadHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7F6210EFB640078ACC6 /* HFMutThreadHomeViewController.m */; };
 		6C91C801210EFB640078ACC6 /* HFQueueAndOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7F8210EFB640078ACC6 /* HFQueueAndOperationViewController.m */; };
 		6C91C804211154C10078ACC6 /* NSString+HFMethodExChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C803211154C10078ACC6 /* NSString+HFMethodExChange.m */; };
+		6C91C8072122B2E30078ACC6 /* HFRuntimeAndMethodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C8062122B2E20078ACC6 /* HFRuntimeAndMethodsViewController.m */; };
+		6C91C80A2122B7360078ACC6 /* HFInterfaceAndAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C8092122B7360078ACC6 /* HFInterfaceAndAPIViewController.m */; };
+		6C91C80E212566410078ACC6 /* HFProtocolAndCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C80D212566400078ACC6 /* HFProtocolAndCategoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,13 @@
 		6C91C7F8210EFB640078ACC6 /* HFQueueAndOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFQueueAndOperationViewController.m; sourceTree = "<group>"; };
 		6C91C802211154C10078ACC6 /* NSString+HFMethodExChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HFMethodExChange.h"; sourceTree = "<group>"; };
 		6C91C803211154C10078ACC6 /* NSString+HFMethodExChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HFMethodExChange.m"; sourceTree = "<group>"; };
+		6C91C8052122B2E20078ACC6 /* HFRuntimeAndMethodsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFRuntimeAndMethodsViewController.h; sourceTree = "<group>"; };
+		6C91C8062122B2E20078ACC6 /* HFRuntimeAndMethodsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFRuntimeAndMethodsViewController.m; sourceTree = "<group>"; };
+		6C91C8082122B7360078ACC6 /* HFInterfaceAndAPIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFInterfaceAndAPIViewController.h; sourceTree = "<group>"; };
+		6C91C8092122B7360078ACC6 /* HFInterfaceAndAPIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFInterfaceAndAPIViewController.m; sourceTree = "<group>"; };
+		6C91C80B21255E740078ACC6 /* HFTestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFTestProtocol.h; sourceTree = "<group>"; };
+		6C91C80C212566400078ACC6 /* HFProtocolAndCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFProtocolAndCategoryViewController.h; sourceTree = "<group>"; };
+		6C91C80D212566400078ACC6 /* HFProtocolAndCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFProtocolAndCategoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +151,7 @@
 				6C1D7EF720F4927300CB6465 /* HFBaseViewController.m */,
 				6C1D7EF920F4928B00CB6465 /* HFHomeViewController.h */,
 				6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */,
+				6C91C80B21255E740078ACC6 /* HFTestProtocol.h */,
 				63DEF8351CBCA0870093230C /* Assets.xcassets */,
 				63DEF8371CBCA0870093230C /* LaunchScreen.storyboard */,
 				63DEF83A1CBCA0870093230C /* Info.plist */,
@@ -212,6 +223,12 @@
 				6C91C7F6210EFB640078ACC6 /* HFMutThreadHomeViewController.m */,
 				6C91C7F7210EFB640078ACC6 /* HFQueueAndOperationViewController.h */,
 				6C91C7F8210EFB640078ACC6 /* HFQueueAndOperationViewController.m */,
+				6C91C8052122B2E20078ACC6 /* HFRuntimeAndMethodsViewController.h */,
+				6C91C8062122B2E20078ACC6 /* HFRuntimeAndMethodsViewController.m */,
+				6C91C8082122B7360078ACC6 /* HFInterfaceAndAPIViewController.h */,
+				6C91C8092122B7360078ACC6 /* HFInterfaceAndAPIViewController.m */,
+				6C91C80C212566400078ACC6 /* HFProtocolAndCategoryViewController.h */,
+				6C91C80D212566400078ACC6 /* HFProtocolAndCategoryViewController.m */,
 			);
 			path = VCS;
 			sourceTree = "<group>";
@@ -347,16 +364,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C91C80E212566410078ACC6 /* HFProtocolAndCategoryViewController.m in Sources */,
 				6C91C7FE210EFB640078ACC6 /* HFConstStaticExternViewController.m in Sources */,
 				6C1D7EF820F4927300CB6465 /* HFBaseViewController.m in Sources */,
 				6C91C7FB210EFB640078ACC6 /* HFFatherModel.m in Sources */,
 				6C91C7FF210EFB640078ACC6 /* HFGCDGroupViewController.m in Sources */,
 				6C91C801210EFB640078ACC6 /* HFQueueAndOperationViewController.m in Sources */,
+				6C91C80A2122B7360078ACC6 /* HFInterfaceAndAPIViewController.m in Sources */,
 				63DEF82E1CBCA0870093230C /* AppDelegate.m in Sources */,
 				6C91C7FD210EFB640078ACC6 /* HFSonModel.m in Sources */,
 				6C91C800210EFB640078ACC6 /* HFMutThreadHomeViewController.m in Sources */,
 				6C91C7F9210EFB640078ACC6 /* UIButton+HFBlock.m in Sources */,
 				63DEF82B1CBCA0870093230C /* main.m in Sources */,
+				6C91C8072122B2E30078ACC6 /* HFRuntimeAndMethodsViewController.m in Sources */,
 				6C91C7FA210EFB640078ACC6 /* HFFactoryArray.m in Sources */,
 				6C91C804211154C10078ACC6 /* NSString+HFMethodExChange.m in Sources */,
 				6C1D7EFB20F4928B00CB6465 /* HFHomeViewController.m in Sources */,

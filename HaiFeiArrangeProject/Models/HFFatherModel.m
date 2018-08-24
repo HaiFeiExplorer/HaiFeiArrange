@@ -16,12 +16,22 @@
     NSString *_fatherAge;
     NSString *_fatherRole;
     NSInteger _fatherNum;
+    
+    
+    struct {
+    
+        unsigned int didReciveRequire  :1;
+        unsigned int didReciveOPtional :1;
+    }_delegateFlags;
 }
 @end
 
 @implementation HFFatherModel
-
-
+- (id)init
+{
+    return [self initWithFirstParms:@"默认" secondParms:@"默认"];
+}
+//本类的全能初始化方法 --在类中提供一个全能初始化方法并说明
 - (id)initWithFirstParms:(NSString *)firstStr secondParms:(NSString *)secondStr
 {
     if (self = [super init]) {
@@ -30,6 +40,41 @@
     }
     return self;
 }
+/*
+ 有时候可能需要多个全能初始化方法，比如，如果对象的实例有两种完全不同的创建方式，必须分开处理，那么就会出现多个情况。以NSCOding协议为例，
+ NSCoding可以的初始化方法没有调用本类的全能初始化方法，而是调用了超类的相关方法，然而若超类也实现了NSCoding，则需改为调用超类的initWithCoder：初始化方法，看HFSonModel类的展示
+ */
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super init]) {
+        _firstParms = [aDecoder decodeObjectForKey:@"adeFirst"];
+        _secondParms = [aDecoder decodeObjectForKey:@"adeSecond"];
+
+    }
+    return self;
+}
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    
+}
+- (id)copyWithZone:(NSZone *)zone
+{
+    HFFatherModel *copy = [[[self class]allocWithZone:zone]
+                           initWithFirstParms:_firstParms
+                           secondParms:_secondParms];
+    return copy;
+}
+/*
+ 自己实现description方法，
+ 目的：返回一个有意义的字符串，用以描述实例
+ debugDescription是在调式时打印出详尽的描述信息
+ 简言之，这两个方法都是为了便于调试！
+ */
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"<%@:%p,\" first = %@,sencond = %@\">",NSStringFromClass([self class]),self,_firstParms,_secondParms];
+}
+
 - (NSUInteger)hash{
     //这个方法在校验对象唯一的时候 才会执行，
     //1、一般而言就是执行isEqual的时候才会触发这个方法
@@ -210,6 +255,41 @@
 {
 
     NSLog(@"123123");
+}
+
+
+
+
+- (void)setDelegate:(id<HFTestProtocol>)delegate
+{
+    _delegate = delegate;
+    _delegateFlags.didReciveRequire = [delegate respondsToSelector:@selector(testProtocolMustDoSomething:)];
+    _delegateFlags.didReciveOPtional = [delegate respondsToSelector:@selector(testProtocolOptinalDoSomething:)];
+        
+}
+
+- (void)protocol_fatherModelProtocolForRequireSth:(NSString *)something
+{
+    NSLog(@" -A--start- = %@",NSStringFromSelector(_cmd));
+
+    if (_delegateFlags.didReciveRequire) {
+        [self.delegate testProtocolMustDoSomething:something];
+        NSLog(@"执行协议 %@",NSStringFromSelector(_cmd));
+
+    }
+    
+}
+
+- (void)protocol_fatherModelProtocolForOptionalSth:(NSString *)something
+{
+    NSLog(@" -A-,start-- = %@",NSStringFromSelector(_cmd));
+
+    if (_delegateFlags.didReciveOPtional) {
+        [self.delegate testProtocolOptinalDoSomething:something];
+        NSLog(@"执行协议 %@",NSStringFromSelector(_cmd));
+        
+    }
+    
 }
 
 @end

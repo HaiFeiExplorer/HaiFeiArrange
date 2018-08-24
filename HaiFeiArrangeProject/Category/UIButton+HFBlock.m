@@ -76,7 +76,6 @@ static void *HFAlterViewKey;
 #pragma mark - AlterViewDelegate
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    
     void (^blcok)(NSInteger) = objc_getAssociatedObject(alertView, &HFAlterViewKey);
     blcok(buttonIndex);
 }
@@ -105,12 +104,7 @@ static void *HFAlterViewKey;
     objc_setAssociatedObject(alert, &kUITableViewIndexKey, indexPath, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     然后在需要使用地方取出，而不需要频繁设置全局变量或属性实现indexpath的传递
      */
-
-    
-    
-
-    
-    
+  
 }
 
 - (void)buttonZeroAction
@@ -122,13 +116,5 @@ static void *HFAlterViewKey;
 {
     NSLog(@"button Index = 1");
 }
-
-
-
-
-
-
-
-
 
 @end

@@ -8,7 +8,7 @@
 
 #import "HFGCDGroupViewController.h"
 
-#define kHFGCDCellID @"kHFGCDCellID"
+static NSString *const kHFGCDCellID = @"kHFGCDCellID";
 
 
 @interface HFGCDGroupViewController ()<UITableViewDelegate,UITableViewDataSource>

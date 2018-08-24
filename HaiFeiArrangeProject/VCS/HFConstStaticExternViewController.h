@@ -11,6 +11,7 @@
 extern int tempWholeNUm;
 //extern int tempStaticWholeNum;
 
+//部分关键字
 @interface HFConstStaticExternViewController : HFBaseViewController
 
 @end

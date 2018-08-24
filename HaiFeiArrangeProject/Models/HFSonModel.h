@@ -10,7 +10,8 @@
 
 @interface HFSonModel : HFFatherModel
 
-@property (nonatomic, copy) NSString *secondParms;
+//重写超类的属性 ，慎重
+//@property (nonatomic, copy) NSString *secondParms;
 
 
 @end
