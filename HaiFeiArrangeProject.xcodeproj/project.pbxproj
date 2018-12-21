@@ -9,12 +9,26 @@
 /* Begin PBXBuildFile section */
 		63DEF82B1CBCA0870093230C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF82A1CBCA0870093230C /* main.m */; };
 		63DEF82E1CBCA0870093230C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF82D1CBCA0870093230C /* AppDelegate.m */; };
-		63DEF8311CBCA0870093230C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF8301CBCA0870093230C /* ViewController.m */; };
-		63DEF8341CBCA0870093230C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DEF8321CBCA0870093230C /* Main.storyboard */; };
 		63DEF8361CBCA0870093230C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DEF8351CBCA0870093230C /* Assets.xcassets */; };
 		63DEF8391CBCA0870093230C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DEF8371CBCA0870093230C /* LaunchScreen.storyboard */; };
 		63DEF8441CBCA0870093230C /* HaiFeiArrangeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF8431CBCA0870093230C /* HaiFeiArrangeProjectTests.m */; };
 		63DEF84F1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEF84E1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m */; };
+		6C1D7EF820F4927300CB6465 /* HFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D7EF720F4927300CB6465 /* HFBaseViewController.m */; };
+		6C1D7EFB20F4928B00CB6465 /* HFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */; };
+		6C91C7F9210EFB640078ACC6 /* UIButton+HFBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7E6210EFB630078ACC6 /* UIButton+HFBlock.m */; };
+		6C91C7FA210EFB640078ACC6 /* HFFactoryArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7E9210EFB630078ACC6 /* HFFactoryArray.m */; };
+		6C91C7FB210EFB640078ACC6 /* HFFatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7EB210EFB630078ACC6 /* HFFatherModel.m */; };
+		6C91C7FC210EFB640078ACC6 /* HFGlobleHandleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7ED210EFB630078ACC6 /* HFGlobleHandleObject.m */; };
+		6C91C7FD210EFB640078ACC6 /* HFSonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7EF210EFB630078ACC6 /* HFSonModel.m */; };
+		6C91C7FE210EFB640078ACC6 /* HFConstStaticExternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7F2210EFB640078ACC6 /* HFConstStaticExternViewController.m */; };
+		6C91C7FF210EFB640078ACC6 /* HFGCDGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7F4210EFB640078ACC6 /* HFGCDGroupViewController.m */; };
+		6C91C800210EFB640078ACC6 /* HFMutThreadHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7F6210EFB640078ACC6 /* HFMutThreadHomeViewController.m */; };
+		6C91C801210EFB640078ACC6 /* HFQueueAndOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C7F8210EFB640078ACC6 /* HFQueueAndOperationViewController.m */; };
+		6C91C804211154C10078ACC6 /* NSString+HFMethodExChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C803211154C10078ACC6 /* NSString+HFMethodExChange.m */; };
+		6C91C8072122B2E30078ACC6 /* HFRuntimeAndMethodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C8062122B2E20078ACC6 /* HFRuntimeAndMethodsViewController.m */; };
+		6C91C80A2122B7360078ACC6 /* HFInterfaceAndAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C8092122B7360078ACC6 /* HFInterfaceAndAPIViewController.m */; };
+		6C91C80E212566410078ACC6 /* HFProtocolAndCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C80D212566400078ACC6 /* HFProtocolAndCategoryViewController.m */; };
+		ADA7B5283A90FE2985827A27 /* Pods_HaiFeiArrangeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7606E59566FB32CFC44A9C33 /* Pods_HaiFeiArrangeProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +53,6 @@
 		63DEF82A1CBCA0870093230C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63DEF82C1CBCA0870093230C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		63DEF82D1CBCA0870093230C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		63DEF82F1CBCA0870093230C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		63DEF8301CBCA0870093230C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		63DEF8331CBCA0870093230C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63DEF8351CBCA0870093230C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63DEF8381CBCA0870093230C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63DEF83A1CBCA0870093230C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +62,40 @@
 		63DEF84A1CBCA0870093230C /* HaiFeiArrangeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaiFeiArrangeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DEF84E1CBCA0870093230C /* HaiFeiArrangeProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaiFeiArrangeProjectUITests.m; sourceTree = "<group>"; };
 		63DEF8501CBCA0870093230C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C1D7EF620F4927300CB6465 /* HFBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFBaseViewController.h; sourceTree = "<group>"; };
+		6C1D7EF720F4927300CB6465 /* HFBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFBaseViewController.m; sourceTree = "<group>"; };
+		6C1D7EF920F4928B00CB6465 /* HFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFHomeViewController.h; sourceTree = "<group>"; };
+		6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFHomeViewController.m; sourceTree = "<group>"; };
+		6C91C7E5210EFB630078ACC6 /* UIButton+HFBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+HFBlock.h"; sourceTree = "<group>"; };
+		6C91C7E6210EFB630078ACC6 /* UIButton+HFBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HFBlock.m"; sourceTree = "<group>"; };
+		6C91C7E8210EFB630078ACC6 /* HFFactoryArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFFactoryArray.h; sourceTree = "<group>"; };
+		6C91C7E9210EFB630078ACC6 /* HFFactoryArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFFactoryArray.m; sourceTree = "<group>"; };
+		6C91C7EA210EFB630078ACC6 /* HFFatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFFatherModel.h; sourceTree = "<group>"; };
+		6C91C7EB210EFB630078ACC6 /* HFFatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFFatherModel.m; sourceTree = "<group>"; };
+		6C91C7EC210EFB630078ACC6 /* HFGlobleHandleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFGlobleHandleObject.h; sourceTree = "<group>"; };
+		6C91C7ED210EFB630078ACC6 /* HFGlobleHandleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFGlobleHandleObject.m; sourceTree = "<group>"; };
+		6C91C7EE210EFB630078ACC6 /* HFSonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSonModel.h; sourceTree = "<group>"; };
+		6C91C7EF210EFB630078ACC6 /* HFSonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFSonModel.m; sourceTree = "<group>"; };
+		6C91C7F1210EFB640078ACC6 /* HFConstStaticExternViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFConstStaticExternViewController.h; sourceTree = "<group>"; };
+		6C91C7F2210EFB640078ACC6 /* HFConstStaticExternViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFConstStaticExternViewController.m; sourceTree = "<group>"; };
+		6C91C7F3210EFB640078ACC6 /* HFGCDGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFGCDGroupViewController.h; sourceTree = "<group>"; };
+		6C91C7F4210EFB640078ACC6 /* HFGCDGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFGCDGroupViewController.m; sourceTree = "<group>"; };
+		6C91C7F5210EFB640078ACC6 /* HFMutThreadHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFMutThreadHomeViewController.h; sourceTree = "<group>"; };
+		6C91C7F6210EFB640078ACC6 /* HFMutThreadHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFMutThreadHomeViewController.m; sourceTree = "<group>"; };
+		6C91C7F7210EFB640078ACC6 /* HFQueueAndOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFQueueAndOperationViewController.h; sourceTree = "<group>"; };
+		6C91C7F8210EFB640078ACC6 /* HFQueueAndOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFQueueAndOperationViewController.m; sourceTree = "<group>"; };
+		6C91C802211154C10078ACC6 /* NSString+HFMethodExChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HFMethodExChange.h"; sourceTree = "<group>"; };
+		6C91C803211154C10078ACC6 /* NSString+HFMethodExChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HFMethodExChange.m"; sourceTree = "<group>"; };
+		6C91C8052122B2E20078ACC6 /* HFRuntimeAndMethodsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFRuntimeAndMethodsViewController.h; sourceTree = "<group>"; };
+		6C91C8062122B2E20078ACC6 /* HFRuntimeAndMethodsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFRuntimeAndMethodsViewController.m; sourceTree = "<group>"; };
+		6C91C8082122B7360078ACC6 /* HFInterfaceAndAPIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFInterfaceAndAPIViewController.h; sourceTree = "<group>"; };
+		6C91C8092122B7360078ACC6 /* HFInterfaceAndAPIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFInterfaceAndAPIViewController.m; sourceTree = "<group>"; };
+		6C91C80B21255E740078ACC6 /* HFTestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFTestProtocol.h; sourceTree = "<group>"; };
+		6C91C80C212566400078ACC6 /* HFProtocolAndCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFProtocolAndCategoryViewController.h; sourceTree = "<group>"; };
+		6C91C80D212566400078ACC6 /* HFProtocolAndCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFProtocolAndCategoryViewController.m; sourceTree = "<group>"; };
+		6D8B0943C46C7E579E7FDD85 /* Pods-HaiFeiArrangeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiFeiArrangeProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaiFeiArrangeProject/Pods-HaiFeiArrangeProject.release.xcconfig"; sourceTree = "<group>"; };
+		7606E59566FB32CFC44A9C33 /* Pods_HaiFeiArrangeProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaiFeiArrangeProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3FB4F5B3A275382DFB041E2 /* Pods-HaiFeiArrangeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiFeiArrangeProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaiFeiArrangeProject/Pods-HaiFeiArrangeProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA7B5283A90FE2985827A27 /* Pods_HaiFeiArrangeProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +124,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34099F61D29F44249F3DAD99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7606E59566FB32CFC44A9C33 /* Pods_HaiFeiArrangeProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DE6C527A55E8B3AE7FD9A8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3FB4F5B3A275382DFB041E2 /* Pods-HaiFeiArrangeProject.debug.xcconfig */,
+				6D8B0943C46C7E579E7FDD85 /* Pods-HaiFeiArrangeProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		63DEF81D1CBCA0870093230C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +148,8 @@
 				63DEF8421CBCA0870093230C /* HaiFeiArrangeProjectTests */,
 				63DEF84D1CBCA0870093230C /* HaiFeiArrangeProjectUITests */,
 				63DEF8271CBCA0870093230C /* Products */,
+				4DE6C527A55E8B3AE7FD9A8D /* Pods */,
+				34099F61D29F44249F3DAD99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +166,16 @@
 		63DEF8281CBCA0870093230C /* HaiFeiArrangeProject */ = {
 			isa = PBXGroup;
 			children = (
+				6C91C7E4210EFB630078ACC6 /* Category */,
+				6C91C7E7210EFB630078ACC6 /* Models */,
+				6C91C7F0210EFB640078ACC6 /* VCS */,
 				63DEF82C1CBCA0870093230C /* AppDelegate.h */,
 				63DEF82D1CBCA0870093230C /* AppDelegate.m */,
-				63DEF82F1CBCA0870093230C /* ViewController.h */,
-				63DEF8301CBCA0870093230C /* ViewController.m */,
-				63DEF8321CBCA0870093230C /* Main.storyboard */,
+				6C1D7EF620F4927300CB6465 /* HFBaseViewController.h */,
+				6C1D7EF720F4927300CB6465 /* HFBaseViewController.m */,
+				6C1D7EF920F4928B00CB6465 /* HFHomeViewController.h */,
+				6C1D7EFA20F4928B00CB6465 /* HFHomeViewController.m */,
+				6C91C80B21255E740078ACC6 /* HFTestProtocol.h */,
 				63DEF8351CBCA0870093230C /* Assets.xcassets */,
 				63DEF8371CBCA0870093230C /* LaunchScreen.storyboard */,
 				63DEF83A1CBCA0870093230C /* Info.plist */,
@@ -140,6 +210,53 @@
 			path = HaiFeiArrangeProjectUITests;
 			sourceTree = "<group>";
 		};
+		6C91C7E4210EFB630078ACC6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6C91C7E5210EFB630078ACC6 /* UIButton+HFBlock.h */,
+				6C91C7E6210EFB630078ACC6 /* UIButton+HFBlock.m */,
+				6C91C802211154C10078ACC6 /* NSString+HFMethodExChange.h */,
+				6C91C803211154C10078ACC6 /* NSString+HFMethodExChange.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		6C91C7E7210EFB630078ACC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6C91C7E8210EFB630078ACC6 /* HFFactoryArray.h */,
+				6C91C7E9210EFB630078ACC6 /* HFFactoryArray.m */,
+				6C91C7EA210EFB630078ACC6 /* HFFatherModel.h */,
+				6C91C7EB210EFB630078ACC6 /* HFFatherModel.m */,
+				6C91C7EC210EFB630078ACC6 /* HFGlobleHandleObject.h */,
+				6C91C7ED210EFB630078ACC6 /* HFGlobleHandleObject.m */,
+				6C91C7EE210EFB630078ACC6 /* HFSonModel.h */,
+				6C91C7EF210EFB630078ACC6 /* HFSonModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6C91C7F0210EFB640078ACC6 /* VCS */ = {
+			isa = PBXGroup;
+			children = (
+				6C91C7F1210EFB640078ACC6 /* HFConstStaticExternViewController.h */,
+				6C91C7F2210EFB640078ACC6 /* HFConstStaticExternViewController.m */,
+				6C91C7F3210EFB640078ACC6 /* HFGCDGroupViewController.h */,
+				6C91C7F4210EFB640078ACC6 /* HFGCDGroupViewController.m */,
+				6C91C7F5210EFB640078ACC6 /* HFMutThreadHomeViewController.h */,
+				6C91C7F6210EFB640078ACC6 /* HFMutThreadHomeViewController.m */,
+				6C91C7F7210EFB640078ACC6 /* HFQueueAndOperationViewController.h */,
+				6C91C7F8210EFB640078ACC6 /* HFQueueAndOperationViewController.m */,
+				6C91C8052122B2E20078ACC6 /* HFRuntimeAndMethodsViewController.h */,
+				6C91C8062122B2E20078ACC6 /* HFRuntimeAndMethodsViewController.m */,
+				6C91C8082122B7360078ACC6 /* HFInterfaceAndAPIViewController.h */,
+				6C91C8092122B7360078ACC6 /* HFInterfaceAndAPIViewController.m */,
+				6C91C80C212566400078ACC6 /* HFProtocolAndCategoryViewController.h */,
+				6C91C80D212566400078ACC6 /* HFProtocolAndCategoryViewController.m */,
+			);
+			path = VCS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63DEF8531CBCA0870093230C /* Build configuration list for PBXNativeTarget "HaiFeiArrangeProject" */;
 			buildPhases = (
+				E03E4A7B0E2D2E865D88E45D /* [CP] Check Pods Manifest.lock */,
 				63DEF8221CBCA0870093230C /* Sources */,
 				63DEF8231CBCA0870093230C /* Frameworks */,
 				63DEF8241CBCA0870093230C /* Resources */,
+				8BEFED02D76B4BF3B7DFB438 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,8 +321,9 @@
 		63DEF81E1CBCA0870093230C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = Elisa;
+				CLASSPREFIX = HF;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = HaiFeiExplorer;
 				TargetAttributes = {
 					63DEF8251CBCA0870093230C = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -246,7 +366,6 @@
 			files = (
 				63DEF8391CBCA0870093230C /* LaunchScreen.storyboard in Resources */,
 				63DEF8361CBCA0870093230C /* Assets.xcassets in Resources */,
-				63DEF8341CBCA0870093230C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,14 +385,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8BEFED02D76B4BF3B7DFB438 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HaiFeiArrangeProject/Pods-HaiFeiArrangeProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaiFeiArrangeProject/Pods-HaiFeiArrangeProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E03E4A7B0E2D2E865D88E45D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HaiFeiArrangeProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63DEF8221CBCA0870093230C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63DEF8311CBCA0870093230C /* ViewController.m in Sources */,
+				6C91C80E212566410078ACC6 /* HFProtocolAndCategoryViewController.m in Sources */,
+				6C91C7FE210EFB640078ACC6 /* HFConstStaticExternViewController.m in Sources */,
+				6C1D7EF820F4927300CB6465 /* HFBaseViewController.m in Sources */,
+				6C91C7FB210EFB640078ACC6 /* HFFatherModel.m in Sources */,
+				6C91C7FF210EFB640078ACC6 /* HFGCDGroupViewController.m in Sources */,
+				6C91C801210EFB640078ACC6 /* HFQueueAndOperationViewController.m in Sources */,
+				6C91C80A2122B7360078ACC6 /* HFInterfaceAndAPIViewController.m in Sources */,
 				63DEF82E1CBCA0870093230C /* AppDelegate.m in Sources */,
+				6C91C7FD210EFB640078ACC6 /* HFSonModel.m in Sources */,
+				6C91C800210EFB640078ACC6 /* HFMutThreadHomeViewController.m in Sources */,
+				6C91C7F9210EFB640078ACC6 /* UIButton+HFBlock.m in Sources */,
 				63DEF82B1CBCA0870093230C /* main.m in Sources */,
+				6C91C8072122B2E30078ACC6 /* HFRuntimeAndMethodsViewController.m in Sources */,
+				6C91C7FA210EFB640078ACC6 /* HFFactoryArray.m in Sources */,
+				6C91C804211154C10078ACC6 /* NSString+HFMethodExChange.m in Sources */,
+				6C1D7EFB20F4928B00CB6465 /* HFHomeViewController.m in Sources */,
+				6C91C7FC210EFB640078ACC6 /* HFGlobleHandleObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +489,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		63DEF8321CBCA0870093230C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63DEF8331CBCA0870093230C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63DEF8371CBCA0870093230C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -336,13 +508,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -379,13 +561,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -410,6 +602,7 @@
 		};
 		63DEF8541CBCA0870093230C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3FB4F5B3A275382DFB041E2 /* Pods-HaiFeiArrangeProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M9UPX4LZRG;
@@ -422,6 +615,7 @@
 		};
 		63DEF8551CBCA0870093230C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D8B0943C46C7E579E7FDD85 /* Pods-HaiFeiArrangeProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M9UPX4LZRG;
