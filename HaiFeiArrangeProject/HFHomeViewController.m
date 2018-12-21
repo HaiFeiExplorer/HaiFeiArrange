@@ -59,33 +59,7 @@ static NSString *const kHFGCDCellID = @"kHFGCDCellID";
 
 
 }
-#pragma mark - Event response
-- (void)mutThreadButtonAction
-{
-    HFMutThreadHomeViewController *mutThraedVC = [[HFMutThreadHomeViewController alloc]init];
-    [self.navigationController pushViewController:mutThraedVC animated:YES];
-}
 
-- (void)constStaticExternButtonAction
-{
-    
-    HFConstStaticExternViewController *constStaticExternVC = [[HFConstStaticExternViewController alloc]init];
-    
-
-    [self.navigationController pushViewController:constStaticExternVC animated:YES];
-    
-}
-- (void)pushHFRuntimeAndMethodsViewController
-{
-    HFRuntimeAndMethodsViewController *runtimeAndMethodVC = [[HFRuntimeAndMethodsViewController alloc]init];
-    [self.navigationController pushViewController:runtimeAndMethodVC animated:YES];
-    
-}
-- (void)pushHFInterfaceAndAPIViewController
-{
-    HFInterfaceAndAPIViewController *interfaceVC = [[HFInterfaceAndAPIViewController alloc]init];
-    [self.navigationController pushViewController:interfaceVC animated:YES];
-}
 #pragma mark - Private methdods
 - (void)pri_installMainTableView
 {

@@ -28,6 +28,7 @@
 		6C91C8072122B2E30078ACC6 /* HFRuntimeAndMethodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C8062122B2E20078ACC6 /* HFRuntimeAndMethodsViewController.m */; };
 		6C91C80A2122B7360078ACC6 /* HFInterfaceAndAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C8092122B7360078ACC6 /* HFInterfaceAndAPIViewController.m */; };
 		6C91C80E212566410078ACC6 /* HFProtocolAndCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C91C80D212566400078ACC6 /* HFProtocolAndCategoryViewController.m */; };
+		ADA7B5283A90FE2985827A27 /* Pods_HaiFeiArrangeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7606E59566FB32CFC44A9C33 /* Pods_HaiFeiArrangeProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,9 @@
 		6C91C80B21255E740078ACC6 /* HFTestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFTestProtocol.h; sourceTree = "<group>"; };
 		6C91C80C212566400078ACC6 /* HFProtocolAndCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFProtocolAndCategoryViewController.h; sourceTree = "<group>"; };
 		6C91C80D212566400078ACC6 /* HFProtocolAndCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFProtocolAndCategoryViewController.m; sourceTree = "<group>"; };
+		6D8B0943C46C7E579E7FDD85 /* Pods-HaiFeiArrangeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiFeiArrangeProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaiFeiArrangeProject/Pods-HaiFeiArrangeProject.release.xcconfig"; sourceTree = "<group>"; };
+		7606E59566FB32CFC44A9C33 /* Pods_HaiFeiArrangeProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaiFeiArrangeProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3FB4F5B3A275382DFB041E2 /* Pods-HaiFeiArrangeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiFeiArrangeProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaiFeiArrangeProject/Pods-HaiFeiArrangeProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA7B5283A90FE2985827A27 /* Pods_HaiFeiArrangeProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +124,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34099F61D29F44249F3DAD99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7606E59566FB32CFC44A9C33 /* Pods_HaiFeiArrangeProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DE6C527A55E8B3AE7FD9A8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3FB4F5B3A275382DFB041E2 /* Pods-HaiFeiArrangeProject.debug.xcconfig */,
+				6D8B0943C46C7E579E7FDD85 /* Pods-HaiFeiArrangeProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		63DEF81D1CBCA0870093230C = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +148,8 @@
 				63DEF8421CBCA0870093230C /* HaiFeiArrangeProjectTests */,
 				63DEF84D1CBCA0870093230C /* HaiFeiArrangeProjectUITests */,
 				63DEF8271CBCA0870093230C /* Products */,
+				4DE6C527A55E8B3AE7FD9A8D /* Pods */,
+				34099F61D29F44249F3DAD99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63DEF8531CBCA0870093230C /* Build configuration list for PBXNativeTarget "HaiFeiArrangeProject" */;
 			buildPhases = (
+				E03E4A7B0E2D2E865D88E45D /* [CP] Check Pods Manifest.lock */,
 				63DEF8221CBCA0870093230C /* Sources */,
 				63DEF8231CBCA0870093230C /* Frameworks */,
 				63DEF8241CBCA0870093230C /* Resources */,
+				8BEFED02D76B4BF3B7DFB438 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,7 +322,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = HF;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = HaiFeiExplorer;
 				TargetAttributes = {
 					63DEF8251CBCA0870093230C = {
@@ -358,6 +384,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BEFED02D76B4BF3B7DFB438 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HaiFeiArrangeProject/Pods-HaiFeiArrangeProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaiFeiArrangeProject/Pods-HaiFeiArrangeProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E03E4A7B0E2D2E865D88E45D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HaiFeiArrangeProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63DEF8221CBCA0870093230C /* Sources */ = {
@@ -435,13 +508,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -478,13 +561,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -509,6 +602,7 @@
 		};
 		63DEF8541CBCA0870093230C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3FB4F5B3A275382DFB041E2 /* Pods-HaiFeiArrangeProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M9UPX4LZRG;
@@ -521,6 +615,7 @@
 		};
 		63DEF8551CBCA0870093230C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D8B0943C46C7E579E7FDD85 /* Pods-HaiFeiArrangeProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M9UPX4LZRG;
