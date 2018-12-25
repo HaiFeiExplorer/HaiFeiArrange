@@ -30,11 +30,11 @@
 #pragma mark -HFTestProtocol
 - (void)testProtocolMustDoSomething:(NSString *)string
 {
-    NSLog(@"string = %@ cmd = %@",string,NSStringFromSelector(_cmd));
+//    NSLog(@"string = %@ cmd = %@",string,NSStringFromSelector(_cmd));
 }
 - (void)testProtocolOptinalDoSomething:(NSString *)string
 {
-    NSLog(@"string = %@ cmd = %@",string,NSStringFromSelector(_cmd));
+//    NSLog(@"string = %@ cmd = %@",string,NSStringFromSelector(_cmd));
 
 }
 

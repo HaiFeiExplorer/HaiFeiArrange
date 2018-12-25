@@ -19,6 +19,7 @@
 //
 - (id)initWithSecondpamrs:(NSString *)second
 {
+    NSLog(@"[self class] = %@ [super class] = %@ ",[self class],[super class]);
     return [super initWithFirstParms:@"Son" secondParms:second];
 }
 - (id)initWithFirstParms:(NSString *)firstStr secondParms:(NSString *)secondStr

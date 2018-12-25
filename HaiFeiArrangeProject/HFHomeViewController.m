@@ -74,9 +74,9 @@ static NSString *const kHFGCDCellID = @"kHFGCDCellID";
 }
 - (void)pri_installButtonArray
 {
-    self.mutButtonArray = [NSMutableArray arrayWithObjects:@"blockButton",@"多线程",@"const,Static,Extern",@"runtimeAndProperty",@"interfaceAndAPI",@"Protocol",nil];
+    self.mutButtonArray = [NSMutableArray arrayWithObjects:@"blockButton",@"多线程",@"const,Static,Extern",@"runtimeAndProperty",@"interfaceAndAPI",@"Protocol",@"内存管理",nil];
 
-    self.mutVCArray = @[@"alterVC",@"HFMutThreadHomeViewController",@"HFConstStaticExternViewController",@"HFRuntimeAndMethodsViewController",@"HFInterfaceAndAPIViewController",@"HFProtocolAndCategoryViewController"];
+    self.mutVCArray = @[@"alterVC",@"HFMutThreadHomeViewController",@"HFConstStaticExternViewController",@"HFRuntimeAndMethodsViewController",@"HFInterfaceAndAPIViewController",@"HFProtocolAndCategoryViewController",@"HFMemoryViewController"];
 
 }
 
